@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng của bạn | VT</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css"
+        integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/logo/favicon.png">
+
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header id="main-header">
+        <div class="header__top--main">
+            <div class="header__top">
+                <small class="header__text .tablet">
+                    <strong>Miễn phí</strong> 
+                    giao hàng toàn quốc với đơn hàng
+                    <strong>trên 249k </strong>
+                </small>
+                <small class="header__phone">
+                    <div class="header__phone--icon">
+                        <a href="tel:0939029037"><i class="fa fa-phone-volume"></i></a>
+
+                    </div>
+                    <div class="header__phone--text">
+                        <a href="tel:0939029037">Hotline: (84) 0939.029.037</a>
+                    </div>
+                </small>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="nav-mobile range">
+                <a class="nav-mobile-icon" href="#">
+                    <i id="open-menu" class="fas fa-bars" onclick="openMobileMenu()"></i>
+                    <img id="close-menu" src="./img/logo/multiplication-sign.png" onclick="closeMobileMenu()" alt="">
+                </a>
+                <div id="nav-mobile-content" class="nav-mobile-content">
+                    <nav>
+                        <ul class="main-mobile-menu">
+                            <li>
+                                <a class="main-link" href="./index.html">TRANG CHỦ</a>
+                            </li>
+                            <li class="has-child__mobile--01">
+                                <div onclick="openCloseFirstTitle()" class="mobile__tilte">
+                                    <a class="main-link" href="#">SẢN PHẨM</a>
+                                    <i class="fas fa-chevron-down down--arrow"></i>
+                                </div>
+                                <ul id="sub-mobile-menu__first--01" class="sub-mobile-menu__first--01">
+                                    <li class="has-child__sub--01">
+                                        <div onclick="openCloseFirstSubTitle()" class="sub__title">
+                                            <a href="#">ÁO</a>
+                                            <i class="fas fa-chevron-down down--arrow"></i>
+                                        </div>
+                                        <ul id="sub-mobile-menu__secondary--01" class="sub-mobile-menu__secondary--01">
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO SƠ MI</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO THUN</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO POLO</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO POLO</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO POLO</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO KHOÁC</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO VEST</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO HOOIDE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child__sub--02">
+                                        <div onclick="openCloseSecondarySubTitle()" class="sub__title">
+                                            <a href="#">QUẦN</a>
+                                            <i class="fas fa-chevron-down down--arrow"></i>
+                                        </div>
+                                        <ul id="sub-mobile-menu__secondary--02" class="sub-mobile-menu__secondary--02">
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN JEANS</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN TÂY</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN SHORT</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN KAKI</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN JOGGER</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./all-products.html">QUẦN ÁO THỂ THAO</a></li>
+                                    <li class="has-child__sub--03">
+                                        <div onclick="openCloseThirdSubTitle()" class="sub__title">
+                                            <a href="#">PHỤ KIỆN KHÁC </a>
+                                            <i class="fas fa-chevron-down down--arrow"></i>
+                                        </div>
+                                        <ul id="sub-mobile-menu__secondary--03" class="sub-mobile-menu__secondary--03">
+                                            <li class="m-size-text"><a href="./all-products.html">NÓN</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">VÍ</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">THẮT LƯNG</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">VÒNG TAY</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">MÓC KHÓA</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./all-products.html">SALE UP TO 50%</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="has-child__mobile--02">
+                                <div onclick="openCloseSecondaryTitle()" class="mobile__tilte">
+                                    <a class="main-link" href="#">BỘ SƯU TẬP</a>
+                                    <i class="fas fa-chevron-down down--arrow"></i>
+                                </div>
+                                <ul id="sub-mobile-menu__first--02" class="sub-mobile-menu__first--02">
+                                    <li> <a href="./collection.html">TET COLORS 2022</a></li>
+                                    <li><a href="./collection.html">SPRING SUMMER 2022</a></li>
+                                    <li><a href="./collection.html">LOVE BRINGS LOVE</a></li>
+                                    <li><a href="./collection.html">SIMPLE IS THE BEST</a></li>
+                                    <li><a href="./collection.html">BIG CITY BOIZ 2022</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="main-link" href="./news.html">TIN TỨC</a>
+                            </li>
+                            <li>
+                                <a class="main-link" href="./stores.html">CỬA HÀNG</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Logo -->
+            <div class="header__logo range">
+                <a href="./index.html">
+                    <img src="./img/logo/logo-company-small-size.jpg" alt="logo-company">
+                </a>
+            </div>
+            <!-- Menu -->
+            <div class="header__menu">
+                <nav>
+                    <ul class="header__menu--main">
+                        <li><a href="./index.html">TRANG CHỦ</a></li>
+                        <li class="has-child-main-01"><a href="#">SẢN PHẨM</a>
+                            <ul class="header__menu--sub">
+                                <li class="has-child-01"> <a href="#">ÁO</a>
+                                    <ul class="header__menu--sub header__menu--sub-01">
+                                        <li class="animate"> <a href="./all-products.html">ÁO SƠ MI</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO THUN</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO POLO</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO KHOÁC</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO VEST</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO HOODIE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-02"> <a href="#">QUẦN</a>
+                                    <ul class="header__menu--sub header__menu--sub-02">
+                                        <li> <a href="./all-products.html">QUẦN JEANS</a></li>
+                                        <li> <a href="./all-products.html">QUẦN TÂY</a></li>
+                                        <li> <a href="./all-products.html">QUẦN SHORT</a></li>
+                                        <li> <a href="./all-products.html">QUẦN KAKI</a></li>
+                                        <li> <a href="./all-products.html">QUẦN JOGGER</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="./all-products.html">QUẦN ÁO THỂ THAO</a></li>
+                                <li class="has-child-03"> <a href="#">PHỤ KIỆN KHÁC</a>
+                                    <ul class="header__menu--sub header__menu--sub-03">
+                                        <li> <a href="./all-products.html">NÓN</a></li>
+                                        <li> <a href="./all-products.html">VÍ</a></li>
+                                        <li> <a href="./all-products.html">THẮT LƯNG</a></li>
+                                        <li> <a href="./all-products.html">VÒNG TAY</a></li>
+                                        <li> <a href="./all-products.html">MÓC KHÓA</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="./all-products.html">SALE UP T0 50%</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-child-main-02"><a href="#">BỘ SƯU TẬP</a>
+                            <ul class="header__menu--sub header__menu--sub-secondary">
+                                <li> <a href="./collection.html">TET COLORS 2022</a></li>
+                                <li><a href="./collection.html">SPRING SUMMER 2022</a></li>
+                                <li><a href="./collection.html">LOVE BRINGS LOVE</a></li>
+                                <li><a href="./collection.html">SIMPLE IS THE BEST</a></li>
+                                <li><a href="./collection.html">BIG CITY BOIZ 2022</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">TIN TỨC</a></li>
+                        <li><a href="./stores.html">CỬA HÀNG</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__convenient range">
+                <!-- Login form -->
+                <div class="header__convenient--icon">
+                    <a href="#"><i class="fas fa-user" onclick="openLoginModal()"></i>
+                    </a>
+                </div>
+                <!-- Search  -->
+                <div class="header__convenient--icon">
+                    <div class="header__search-icon">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <div class="header__search-frame">
+                        <p class="header__search-frame--title">TÌM KIẾM</p>
+                        <div class="header__search-frame--input">
+                            <input class="header__search-frame--text" type="text" name="" id=""
+                                placeholder=" Tìm kiếm sản phẩm...">
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Cart Page -->
+                <div class="header__convenient--icon">
+                    <a href="./cart.html"><i class="fas fa-cart-plus"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Navigation -->
+    <!-- Tablet & Desktop -->
+    <div class="all-products-navigation">
+        <div class="main-navigation">
+            <p>
+                Trang chủ /
+            </p>
+            <p class="main-navigation-text">
+                Giỏ hàng
+            <p>
+
+        </div>
+    </div>
+    <!-- Mobile -->
+    <div class="all-products-navigation__mobile mobile">
+        <div class="main-navigation__mobile">
+            <p>
+                Trang chủ /
+                <span>
+                    Giỏ hàng
+                </span>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Main Start -->
+    <main id="main">
+        <!-- Modal layout -->
+        <!-- Login form -->
+        <div id="loginModal">
+            <section class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <!-- Authen form -->
+                    <div class="auth-form">
+                        <div class="auth-form__cotainer">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">ĐĂNG NHẬP TÀI KHOẢN</h3>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="form-control">
+                                    <label>Email</label>
+                                    <input id="email" type="text" class="auth-form__input success"
+                                        placeholder="e.g. email@address.com">
+                                    <i id="email-success-icon" class="fas fa-check-circle"></i>
+                                    <i id="email-error-icon" class="fas fa-exclamation-circle"></i>
+                                    <small id="email-error"></small>
+                                    <small id="email-success"></small>
+                                </div>
+                                <div class="form-control">
+                                    <label>Mật khẩu</label>
+                                    <input id="password" type="password" class="auth-form__input error"
+                                        placeholder="Must be at least 6 characters">
+                                    <i id="password-success-icon" class="fas fa-check-circle"></i>
+                                    <i id="password-error-icon" class="fas fa-exclamation-circle"></i>
+                                    <small id="password-error"></small>
+                                    <small id="password-success"></small>
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <div class="check-box">
+                                    <input class="check-box__action" type="checkbox" checked="checked" name="remember">
+                                    <p> Nhớ tài khoản</p>
+                                </div>
+                                <p class="auth-form__aside--support">Khách hàng mới? <a class="auth-form__text-support"
+                                        href="#" onclick="openRegisterModal()">Tạo tài khoản</a></p>
+                                <p class="auth-form__aside--support">Quên mật khẩu? <a class="auth-form__text-support"
+                                        href="#" onclick="openRestoreModal()">Khôi phục mật khẩu</a></p>
+
+                            </div>
+                            <div class="auth-form__controls">
+                                <button onclick="closeLoginModal()" class="btn auth-form__controls-back btn--normal">TRỞ
+                                    LẠI</button>
+                                <button onclick="checkInfo()" class="btn btn--primary form-button">ĐĂNG
+                                    NHẬP</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <img class="google-logo" src="./img/logo/Facebook_Logo.png" alt="Facebook-logo">
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="auth-form__socials--google btn  btn--size-s btn--with-icon">
+                                <img class="google-logo" src="./img/logo/Google__G__Logo.svg.png" alt="Google-logo">
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Register form -->
+        <div id="registerModal">
+            <section class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <!-- Authen form -->
+                    <div class="auth-form">
+                        <div class="auth-form__cotainer">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">ĐĂNG KÝ TÀI KHOẢN</h3>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="form-control">
+                                    <label>Họ và tên</label>
+                                    <input id="fnameRegister" type="text" class="auth-form__input success"
+                                        placeholder="e.g. Nguyen Van A">
+                                    <i id="fname-success-icon" class="fas fa-check-circle"></i>
+                                    <i id="fname-error-icon" class="fas fa-exclamation-circle"></i>
+                                    <small id="fname-error"></small>
+                                    <small id="fname-success"></small>
+                                </div>
+                                <div class="form-control">
+                                    <label>Email</label>
+                                    <input id="emailRegister" type="text" class="auth-form__input success"
+                                        placeholder="e.g. email@address.com">
+                                    <i id="email-success-icon__register" class="fas fa-check-circle"></i>
+                                    <i id="email-error-icon__register" class="fas fa-exclamation-circle"></i>
+                                    <small id="email-error__register"></small>
+                                    <small id="email-success__register"></small>
+                                </div>
+                                <div class="form-control">
+                                    <label>Mật khẩu</label>
+                                    <input id="passwordRegister" type="password" class="auth-form__input error"
+                                        placeholder="Must be at least 6 characters">
+                                    <i id="password-success-icon__register" class="fas fa-check-circle"></i>
+                                    <i id="password-error-icon__register" class="fas fa-exclamation-circle"></i>
+                                    <small id="password-error__register"></small>
+                                    <small id="password-success__register"></small>
+                                </div>
+                                <div class="form-control ">
+                                    <label>Nhập lại mật khẩu</label>
+                                    <input id="passwordRetype" type="password" class="auth-form__input error"
+                                        placeholder="Must be at least 6 characters">
+                                    <i id="password-success-icon__retype" class="fas fa-check-circle"></i>
+                                    <i id="password-error-icon__retype" class="fas fa-exclamation-circle"></i>
+                                    <small id="password-error__retype"></small>
+                                    <small id="password-success__retype"></small>
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">
+                                    Bằng việc đăng ký, bạn đã đồng ý với VT Shop về
+                                    <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                    <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button onclick="closeRegisterModal()"
+                                    class="btn auth-form__controls-back btn--normal">TRỞ
+                                    LẠI</button>
+                                <button onclick="checkInfoRegister()" class="btn btn--primary form-button">ĐĂNG
+                                    KÝ</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <img class="google-logo" src="./img/logo/Facebook_Logo.png" alt="Facebook-logo">
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="auth-form__socials--google btn  btn--size-s btn--with-icon">
+                                <img class="google-logo" src="./img/logo/Google__G__Logo.svg.png" alt="Google-logo">
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </div>
+        <!-- Restore form -->
+        <div id="restoreModal">
+            <section class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <!-- Authen form -->
+                    <div class="auth-form">
+                        <div class="auth-form__cotainer">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">KHÔI PHỤC TÀI KHOẢN</h3>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="form-control ">
+                                    <label>Email</label>
+                                    <input id="emailRetore" type="text" class="auth-form__input success"
+                                        placeholder="e.g. email@address.com">
+                                    <i id="email-success-icon__restore" class="fas fa-check-circle"></i>
+                                    <i id="email-error-icon__restore" class="fas fa-exclamation-circle"></i>
+                                    <small id="email-error__restore"></small>
+                                    <small id="email-success__restore"></small>
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">
+                                    Xin hãy nhập địa chỉ Email đăng ký thành viên ở đây. Chúng tôi sẽ gửi mật khẩu mới
+                                    cho
+                                    bạn qua Email
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button onclick="closeRestoreModal()"
+                                    class="btn auth-form__controls-back btn--normal">TRỞ
+                                    LẠI</button>
+                                <button onclick="checkInfoRestore()" class="btn btn--primary form-button">KHÔI
+                                    PHỤC</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Carts -->
+        <div class="carts">
+            <h2>
+                Giỏ hàng của bạn
+            </h2>
+            <div class="main-cart">
+                <!-- List-carts -->
+                <div class="list-carts">
+                    <form action="">
+                        <table>
+                            <thead>
+                                <tr class="list-carts__title">
+                                    <th>Sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Frist -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/detail-product/big-img/tees_01.jpg" alt="">
+                                        <div class="item-info">
+                                            <p class="product-name">Raglan Premium Tees 20219</p>
+                                            <span>M / Xanh / Body</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="main-price-list">
+                                            <span class="price"> 310.000</span>
+                                            <small>đ</small>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input class="cart-input" type="number" value="1" min="1">
+                                    </td>
+                                    <td>
+                                        <i class="far fa-trash-alt cart-delete"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <!-- Order-info -->
+                <div class="order-info">
+                    <h2>
+                        Thông tin đơn hàng
+                    </h2>
+                    <div class="total-money">
+                        <p>Tổng tiền:</p>
+                        <div class="main-price-total">
+                            <p class="price-total">310.000</p>
+                            <p>đ</p>
+                        </div>
+
+                    </div>
+                    <div class="order-info__sub">
+                        <ul>
+                            <li>Phí vận chuyển sẽ được tính ở trang thanh toán</li>
+                            <li>Bạn cũng có thể nhập mã giảm giá ở trang thanh toán</li>
+                        </ul>
+                    </div>
+                    <div class="payment-btn">
+                        <p>THANH TOÁN</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select-product -->
+            <h2>Thêm sản phẩm</h2>
+            <div class="main-select-product">
+                <!-- First-row -->
+                <div class="sub-selec-product">
+                    <div class="select-product">
+                        <div class="product-item">
+                            <img src="./img/all-products/20219_raglan tees.jpg" alt="">
+                            <p>Raglan Premium Tees 20219 </p>
+                            <span>M / Xanh / Body</span>
+                            <div class="main-price">
+                                <p class="price">310.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+
+                        <div class="product-item product-item__left">
+                            <img class="limited" src="./img/all-products/20039_jeans.jpg" alt="">
+                            <p>VT Middle Blue Jeans 20039 </p>
+                            <span>34 / Xanh / Slim Fit</span>
+                            <div class="main-price">
+                                <p class="price">575.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-product">
+                        <div class="product-item product-item__right">
+                            <img src="./img/all-products/21092_mix-tees_white.jpg" alt="">
+                            <p>Mix Colour Tees 21092</p>
+                            <span>L / Trắng / Slim Fit</span>
+                            <div class="main-price">
+                                <p class="price">320.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <img src="./img/all-products/20007_short-jeans.jpg" alt="">
+                            <p>Relaxed Fit Short Jeans 20007</p>
+                            <span>32 / Xanh / Slim Fit</span>
+                            <div class="main-price">
+                                <p class="price">395.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary-row -->
+                <div class="sub-selec-product">
+
+                    <div class="select-product">
+                        <div class="product-item">
+                            <img src="./img/all-products/s21066_striped_gray.jpg" alt="">
+                            <p>Striped Tees S21066 </p>
+                            <span>S / Xám / Body</span>
+                            <div class="main-price">
+                                <p class="price">320.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+
+                        <div class="product-item product-item__left">
+                            <img src="./img/all-products/21051_colour-tees_white.jpg" alt="">
+                            <p>Mix Colour Tees 21051 </p>
+                            <span>L / Trắng / Body</span>
+                            <div class="main-price">
+                                <p class="price">330.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select-product">
+                        <div class="product-item product-item__right">
+                            <img src="./img/all-products/20057_jackets_yellow.jpg" alt="">
+                            <p>Lightweight Jackets 20057</p>
+                            <span>XL / Vàng / Regular</span>
+                            <div class="main-price">
+                                <p class="price">495.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <img src="./img/all-products/20026_denim_blue.jpg" alt="">
+                            <p>Denim Jackets 20026</p>
+                            <span>L / Xanh / Regular</span>
+                            <div class="main-price">
+                                <p class="price">595.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Third-row -->
+                <div class="sub-selec-product">
+                    <div class="select-product">
+                        <div class="product-item ">
+                            <img src="./img/all-products/21104_pants.jpg" alt="">
+                            <p>Detail Pants 21104 </p>
+                            <span>29 / Xám / Slim Fit</span>
+                            <div class="main-price">
+                                <p class="price">545.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+
+                        <div class="product-item product-item__left">
+                            <img src="./img/all-products/20036_light-blue-jeans.png" alt="">
+                            <p>VT Light Blue Jeans 20036</p>
+                            <span>32 / Xanh / Skinny</span>
+                            <div class="main-price">
+                                <p class="price">575.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-product">
+                        <div class="product-item product-item__right">
+                            <img src="./img/all-products/21090_B_Pants_brown.jpg" alt="">
+                            <p>Short Pants 21090/B</p>
+                            <span>30 / Xám / Regular</span>
+                            <div class="main-price">
+                                <p class="price">375.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <img src="./img/all-products/20047_pants.jpg" alt="">
+                            <p> Co.7 Detail Short Pants 20047</p>
+                            <span>32 / Đen / Regular</span>
+                            <div class="main-price">
+                                <p class="price">395.000</p>
+                                <small>đ</small>
+                            </div>
+                            <div class="add-to-cart">
+                                <p class="button">Thêm vào giỏ hàng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Selected-product-popup -->
+        <div id="selected-product">
+            <div class="main-selected-product">
+                <div class="selected-product__overlay"></div>
+                <div class="selected-product__body">
+                    <div class="selected-product">
+                        <img src="./img/logo/logo-company-3.jpg" alt="">
+                        <p class="selected-product__title">Sản phẩm này đã có trong giỏ hàng!</p>
+                        <p onclick="closeSelectedProduct()" class="move-on">Tiếp tục mua sắm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer>
+        <div id="footer" class="footer">
+            <div class="main-footer hide">
+                <div class="sub-footer">
+                    <h4 class="sub-footer-title">
+                        CHÍNH SÁCH KHÁCH HÀNG
+                    </h4>
+                    <ul>
+                        <a href="#">
+                            <li>Chính sách giao hàng</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách bảo mật thông tin</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách tích điểm thành viên</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách bảo hành, đổi/trả sản phẩm</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách thanh toán khi mua hàng Online</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="sub-footer">
+                    <h4 class="sub-footer-title">
+                        CUSTOMER SERVICE
+                    </h4>
+                    <ul>
+                        <a href="#">
+                            <li>Sản phẩm nổi bật</li>
+                        </a>
+                        <a href="#">
+                            <li>Tất cả sản phẩm</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="sub-footer">
+                    <h4 class="sub-footer-title">
+                        TIN TỨC
+                    </h4>
+                    <ul>
+                        <a href="#">
+                            <li>Live</li>
+                        </a>
+                        <a href="#">
+                            <li>Trendy</li>
+                        </a>
+                        <a href="#">
+                            <li>Entertainment</li>
+                        </a>
+                        <a href="#">
+                            <li>Grooming</li>
+                        </a>
+                        <a href="#">
+                            <li>Tuyển dụng</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="sub-footer-register">
+                    <div class="footer-register-frame">
+                        <input type="text" placeholder="Nhập email của bạn">
+                        <button>ĐĂNG KÝ</button>
+                    </div>
+                    <div class="footer-register-icon">
+                        <a href="#">
+                            <i class="fab fa-facebook-f facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram insta"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-footer-mobile mobile">
+                <div class="footer-mobile-content">
+                    <ul class="list-footer-mobile">
+                        <div class="footer-mobile-title">
+                            <li>
+                                <p onclick="openCloseFirstListFooter()">CHÍNH SÁCH KHÁCH HÀNG </p>
+                                <ul id="firstListFooter" class="list-footer-mobile__hide">
+                                    <li><a href="#">Chính sách giao hàng</a></li>
+                                    <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                                    <li><a href="#">Chính sách tích điểm thành viên</a></li>
+                                    <li><a href="#">Chính sách bảo hành,đổi/trả sản phẩm</a></li>
+                                    <li><a href="#">Chính sách thanh toán khi mua hàng online</a></li>
+                                </ul>
+                            </li>
+                            <i class="fas fa-chevron-down footer-down"></i>
+                        </div>
+
+                        <div class="footer-mobile-title">
+                            <li>
+                                <p onclick="openCloseSecondaryListFooter()">CUSTOMER SERVICE</p>
+                                <ul id="secondListFooter" class="list-footer-mobile__hide">
+                                    <li><a href="#">Sản phẩm nổi bật</a></li>
+                                    <li><a href="#">Tất cả sản phẩm</a></li>
+                                </ul>
+                            </li>
+                            <i class="fas fa-chevron-down footer-down"></i>
+                        </div>
+                        <div class="footer-mobile-title">
+                            <li>
+                                <p onclick="openCloseThirdListFooter()">TIN TỨC</p>
+                                <ul id="thirdListFooter" class="list-footer-mobile__hide">
+                                    <li><a href="#">Live</a></li>
+                                    <li><a href="#">Trendy</a></li>
+                                    <li><a href="#">Entertainment</a></li>
+                                    <li><a href="#">Grooming</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                </ul>
+                            </li>
+                            <i class="fas fa-chevron-down footer-down"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-footer-register-mobile mobile">
+                <div class="footer-register-frame-mobile">
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button>ĐĂNG KÝ</button>
+                </div>
+                <div class="footer-register-icon">
+                    <a href="#">
+                        <i class="fab fa-facebook-f facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram insta"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright &copy; 2022 VT Shop. Designed by Trung Nguyen
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Back to top  -->
+    <a onclick="topFunction()" href="#" class="to-top" id="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/cart.js" type="text/javascript"></script>
+</body>
+
+</html>

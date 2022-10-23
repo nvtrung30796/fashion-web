@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống cửa hàng | VT</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css"
+        integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/logo/favicon.png">
+
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header id="main-header">
+        <div class="header__top--main">
+            <div class="header__top">
+                <small class="header__text .tablet">
+                    <strong>Miễn phí</strong>
+                    giao hàng toàn quốc với đơn hàng
+                    <strong>trên 249k </strong>
+                </small>
+                <small class="header__phone">
+                    <div class="header__phone--icon">
+                        <a href="tel:0939029037"><i class="fa fa-phone-volume"></i></a>
+
+                    </div>
+                    <div class="header__phone--text">
+                        <a href="tel:0939029037">Hotline: (84) 0939.029.037</a>
+                    </div>
+                </small>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="nav-mobile range">
+                <a class="nav-mobile-icon" href="#">
+                    <i id="open-menu" class="fas fa-bars" onclick="openMobileMenu()"></i>
+                    <img id="close-menu" src="./img/logo/multiplication-sign.png" onclick="closeMobileMenu()" alt="">
+                </a>
+                <div id="nav-mobile-content" class="nav-mobile-content">
+                    <nav>
+                        <ul class="main-mobile-menu">
+                            <li>
+                                <a class="main-link" href="./index.html">TRANG CHỦ</a>
+                            </li>
+                            <li class="has-child__mobile--01">
+                                <div onclick="openCloseFirstTitle()" class="mobile__tilte">
+                                    <a class="main-link" href="#">SẢN PHẨM</a>
+                                    <i class="fas fa-chevron-down down--arrow"></i>
+                                </div>
+                                <ul id="sub-mobile-menu__first--01" class="sub-mobile-menu__first--01">
+                                    <li class="has-child__sub--01">
+                                        <div onclick="openCloseFirstSubTitle()" class="sub__title">
+                                            <a href="#">ÁO</a>
+                                            <i class="fas fa-chevron-down down--arrow"></i>
+                                        </div>
+                                        <ul id="sub-mobile-menu__secondary--01" class="sub-mobile-menu__secondary--01">
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO SƠ MI</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO THUN</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO POLO</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO POLO</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO POLO</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO KHOÁC</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO VEST</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">ÁO HOOIDE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-child__sub--02">
+                                        <div onclick="openCloseSecondarySubTitle()" class="sub__title">
+                                            <a href="#">QUẦN</a>
+                                            <i class="fas fa-chevron-down down--arrow"></i>
+                                        </div>
+                                        <ul id="sub-mobile-menu__secondary--02" class="sub-mobile-menu__secondary--02">
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN JEANS</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN TÂY</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN SHORT</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN KAKI</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">QUẦN JOGGER</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./all-products.html">QUẦN ÁO THỂ THAO</a></li>
+                                    <li class="has-child__sub--03">
+                                        <div onclick="openCloseThirdSubTitle()" class="sub__title">
+                                            <a href="#">PHỤ KIỆN KHÁC </a>
+                                            <i class="fas fa-chevron-down down--arrow"></i>
+                                        </div>
+                                        <ul id="sub-mobile-menu__secondary--03" class="sub-mobile-menu__secondary--03">
+                                            <li class="m-size-text"><a href="./all-products.html">NÓN</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">VÍ</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">THẮT LƯNG</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">VÒNG TAY</a></li>
+                                            <li class="m-size-text"><a href="./all-products.html">MÓC KHÓA</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./all-products.html">SALE UP TO 50%</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="has-child__mobile--02">
+                                <div onclick="openCloseSecondaryTitle()" class="mobile__tilte">
+                                    <a class="main-link" href="#">BỘ SƯU TẬP</a>
+                                    <i class="fas fa-chevron-down down--arrow"></i>
+                                </div>
+                                <ul id="sub-mobile-menu__first--02" class="sub-mobile-menu__first--02">
+                                    <li> <a href="./collection.html">TET COLORS 2022</a></li>
+                                    <li><a href="./collection.html">SPRING SUMMER 2022</a></li>
+                                    <li><a href="./collection.html">LOVE BRINGS LOVE</a></li>
+                                    <li><a href="./collection.html">SIMPLE IS THE BEST</a></li>
+                                    <li><a href="./collection.html">BIG CITY BOIZ 2022</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="main-link" href="./news.html">TIN TỨC</a>
+                            </li>
+                            <li>
+                                <a class="main-link" href="./stores.html">CỬA HÀNG</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Logo -->
+            <div class="header__logo range">
+                <a href="./index.html">
+                    <img src="./img/logo/logo-company-small-size.jpg" alt="logo-company">
+                </a>
+            </div>
+            <!-- Menu -->
+            <div class="header__menu">
+                <nav>
+                    <ul class="header__menu--main">
+                        <li><a href="./index.html">TRANG CHỦ</a></li>
+                        <li class="has-child-main-01"><a href="#">SẢN PHẨM</a>
+                            <ul class="header__menu--sub">
+                                <li class="has-child-01"> <a href="#">ÁO</a>
+                                    <ul class="header__menu--sub header__menu--sub-01">
+                                        <li class="animate"> <a href="./all-products.html">ÁO SƠ MI</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO THUN</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO POLO</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO KHOÁC</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO VEST</a></li>
+                                        <li class="animate"> <a href="./all-products.html">ÁO HOODIE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-02"> <a href="#">QUẦN</a>
+                                    <ul class="header__menu--sub header__menu--sub-02">
+                                        <li> <a href="./all-products.html">QUẦN JEANS</a></li>
+                                        <li> <a href="./all-products.html">QUẦN TÂY</a></li>
+                                        <li> <a href="./all-products.html">QUẦN SHORT</a></li>
+                                        <li> <a href="./all-products.html">QUẦN KAKI</a></li>
+                                        <li> <a href="./all-products.html">QUẦN JOGGER</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="./all-products.html">QUẦN ÁO THỂ THAO</a></li>
+                                <li class="has-child-03"> <a href="#">PHỤ KIỆN KHÁC</a>
+                                    <ul class="header__menu--sub header__menu--sub-03">
+                                        <li> <a href="./all-products.html">NÓN</a></li>
+                                        <li> <a href="./all-products.html">VÍ</a></li>
+                                        <li> <a href="./all-products.html">THẮT LƯNG</a></li>
+                                        <li> <a href="./all-products.html">VÒNG TAY</a></li>
+                                        <li> <a href="./all-products.html">MÓC KHÓA</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="./all-products.html">SALE UP T0 50%</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-child-main-02"><a href="#">BỘ SƯU TẬP</a>
+                            <ul class="header__menu--sub header__menu--sub-secondary">
+                                <li> <a href="./collection.html">TET COLORS 2022</a></li>
+                                <li><a href="./collection.html">SPRING SUMMER 2022</a></li>
+                                <li><a href="./collection.html">LOVE BRINGS LOVE</a></li>
+                                <li><a href="./collection.html">SIMPLE IS THE BEST</a></li>
+                                <li><a href="./collection.html">BIG CITY BOIZ 2022</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">TIN TỨC</a></li>
+                        <li><a href="./stores.html">CỬA HÀNG</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__convenient range">
+                <!-- Login form -->
+                <div class="header__convenient--icon">
+                    <a href="#"><i class="fas fa-user" onclick="openLoginModal()"></i>
+                    </a>
+                </div>
+                <!-- Search  -->
+                <div class="header__convenient--icon">
+                    <div class="header__search-icon">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <div class="header__search-frame">
+                        <p class="header__search-frame--title">TÌM KIẾM</p>
+                        <div class="header__search-frame--input">
+                            <input class="header__search-frame--text" type="text" name="" id=""
+                                placeholder=" Tìm kiếm sản phẩm...">
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Cart Page -->
+                <div class="header__convenient--icon">
+                    <a href="./cart.html"><i class="fas fa-cart-plus"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Navigation -->
+    <!-- Tablet & Desktop -->
+    <div class="all-products-navigation">
+        <div class="main-navigation">
+            <p>
+                Trang chủ /
+            </p>
+            <p class="main-navigation-text">
+                Hệ thống cửa hàng
+            <p>
+
+        </div>
+    </div>
+    <!-- Mobile -->
+    <div class="all-products-navigation__mobile mobile">
+        <div class="main-navigation__mobile">
+            <p>
+                Trang chủ /
+                <span>
+                    Hệ thống cửa hàng
+                </span>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Main Start -->
+    <main id="main">
+        <!-- Modal layout -->
+        <!-- Login form -->
+        <div id="loginModal">
+            <section class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <!-- Authen form -->
+                    <div class="auth-form">
+                        <div class="auth-form__cotainer">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">ĐĂNG NHẬP TÀI KHOẢN</h3>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="form-control">
+                                    <label>Email</label>
+                                    <input id="email" type="text" class="auth-form__input success"
+                                        placeholder="e.g. email@address.com">
+                                    <i id="email-success-icon" class="fas fa-check-circle"></i>
+                                    <i id="email-error-icon" class="fas fa-exclamation-circle"></i>
+                                    <small id="email-error"></small>
+                                    <small id="email-success"></small>
+                                </div>
+                                <div class="form-control">
+                                    <label>Mật khẩu</label>
+                                    <input id="password" type="password" class="auth-form__input error"
+                                        placeholder="Must be at least 6 characters">
+                                    <i id="password-success-icon" class="fas fa-check-circle"></i>
+                                    <i id="password-error-icon" class="fas fa-exclamation-circle"></i>
+                                    <small id="password-error"></small>
+                                    <small id="password-success"></small>
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <div class="check-box">
+                                    <input class="check-box__action" type="checkbox" checked="checked" name="remember">
+                                    <p> Nhớ tài khoản</p>
+                                </div>
+                                <p class="auth-form__aside--support">Khách hàng mới? <a class="auth-form__text-support"
+                                        href="#" onclick="openRegisterModal()">Tạo tài khoản</a></p>
+                                <p class="auth-form__aside--support">Quên mật khẩu? <a class="auth-form__text-support"
+                                        href="#" onclick="openRestoreModal()">Khôi phục mật khẩu</a></p>
+
+                            </div>
+                            <div class="auth-form__controls">
+                                <button onclick="closeLoginModal()" class="btn auth-form__controls-back btn--normal">TRỞ
+                                    LẠI</button>
+                                <button onclick="checkInfo()" class="btn btn--primary form-button">ĐĂNG
+                                    NHẬP</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <img class="google-logo" src="./img/logo/Facebook_Logo.png" alt="Facebook-logo">
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="auth-form__socials--google btn  btn--size-s btn--with-icon">
+                                <img class="google-logo" src="./img/logo/Google__G__Logo.svg.png" alt="Google-logo">
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Register form -->
+        <div id="registerModal">
+            <section class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <!-- Authen form -->
+                    <div class="auth-form">
+                        <div class="auth-form__cotainer">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">ĐĂNG KÝ TÀI KHOẢN</h3>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="form-control">
+                                    <label>Họ và tên</label>
+                                    <input id="fnameRegister" type="text" class="auth-form__input success"
+                                        placeholder="e.g. Nguyen Van A">
+                                    <i id="fname-success-icon" class="fas fa-check-circle"></i>
+                                    <i id="fname-error-icon" class="fas fa-exclamation-circle"></i>
+                                    <small id="fname-error"></small>
+                                    <small id="fname-success"></small>
+                                </div>
+                                <div class="form-control">
+                                    <label>Email</label>
+                                    <input id="emailRegister" type="text" class="auth-form__input success"
+                                        placeholder="e.g. email@address.com">
+                                    <i id="email-success-icon__register" class="fas fa-check-circle"></i>
+                                    <i id="email-error-icon__register" class="fas fa-exclamation-circle"></i>
+                                    <small id="email-error__register"></small>
+                                    <small id="email-success__register"></small>
+                                </div>
+                                <div class="form-control">
+                                    <label>Mật khẩu</label>
+                                    <input id="passwordRegister" type="password" class="auth-form__input error"
+                                        placeholder="Must be at least 6 characters">
+                                    <i id="password-success-icon__register" class="fas fa-check-circle"></i>
+                                    <i id="password-error-icon__register" class="fas fa-exclamation-circle"></i>
+                                    <small id="password-error__register"></small>
+                                    <small id="password-success__register"></small>
+                                </div>
+                                <div class="form-control ">
+                                    <label>Nhập lại mật khẩu</label>
+                                    <input id="passwordRetype" type="password" class="auth-form__input error"
+                                        placeholder="Must be at least 6 characters">
+                                    <i id="password-success-icon__retype" class="fas fa-check-circle"></i>
+                                    <i id="password-error-icon__retype" class="fas fa-exclamation-circle"></i>
+                                    <small id="password-error__retype"></small>
+                                    <small id="password-success__retype"></small>
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">
+                                    Bằng việc đăng ký, bạn đã đồng ý với VT Shop về
+                                    <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                    <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button onclick="closeRegisterModal()"
+                                    class="btn auth-form__controls-back btn--normal">TRỞ
+                                    LẠI</button>
+                                <button onclick="checkInfoRegister()" class="btn btn--primary form-button">ĐĂNG
+                                    KÝ</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <img class="google-logo" src="./img/logo/Facebook_Logo.png" alt="Facebook-logo">
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="auth-form__socials--google btn  btn--size-s btn--with-icon">
+                                <img class="google-logo" src="./img/logo/Google__G__Logo.svg.png" alt="Google-logo">
+                                <span class="auth-form__socials-title">
+                                    Kết nối với Google
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </div>
+        <!-- Restore form -->
+        <div id="restoreModal">
+            <section class="modal">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <!-- Authen form -->
+                    <div class="auth-form">
+                        <div class="auth-form__cotainer">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">KHÔI PHỤC TÀI KHOẢN</h3>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="form-control ">
+                                    <label>Email</label>
+                                    <input id="emailRetore" type="text" class="auth-form__input success"
+                                        placeholder="e.g. email@address.com">
+                                    <i id="email-success-icon__restore" class="fas fa-check-circle"></i>
+                                    <i id="email-error-icon__restore" class="fas fa-exclamation-circle"></i>
+                                    <small id="email-error__restore"></small>
+                                    <small id="email-success__restore"></small>
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">
+                                    Xin hãy nhập địa chỉ Email đăng ký thành viên ở đây. Chúng tôi sẽ gửi mật khẩu mới
+                                    cho
+                                    bạn qua Email
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button onclick="closeRestoreModal()"
+                                    class="btn auth-form__controls-back btn--normal">TRỞ
+                                    LẠI</button>
+                                <button onclick="checkInfoRestore()" class="btn btn--primary form-button">KHÔI
+                                    PHỤC</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Stores -->
+        <!-- Desktop -->
+        <div class="desktop">
+            <div class="stores">
+                <!-- Location -->
+                <div class="select-location">
+                    <p>
+                        HỆ THỐNG CỬA HÀNG
+                    </p>
+                    <!-- Select-location-option -->
+                    <div class="select-location-option">
+                        <select name="" id="">
+                            <option value="Chọn Thành Phố ">Chọn Thành Phố </option>
+                            <option onclick="close()" value="Bình Định">Bình Định </option>
+                            <option value="Quảng Ngãi">Quảng Ngãi</option>
+                            <option value="Cần Thơ ">Cần Thơ </option>
+                            <option value="Đà Nẵng">Đà Nẵng </option>
+                            <option value="Đồng Nai">Đồng Nai </option>
+                            <option value="Hồ Chí Minh">Hồ Chí Minh </option>
+                            <option value="Vũng Tàu">Vũng Tàu </option>
+                        </select>
+                    </div>
+                     <!-- Select-location-option -->
+                    <div class="select-location-option">
+                        <select name="" id="">
+                            <option value="">Chọn Quận/Huyện </option>
+                        </select>
+                    </div>
+                    <!-- <img src="./img/stores/banner-mystore.jpg" alt="banner"> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.514482274628!2d106.68499711458004!3d10.771851962224162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f23395e73d7%3A0xdbc7da126db3106d!2zVmlldCB1YyB0b3dlciwgNDAyIE5ndXnhu4VuIFRo4buLIE1pbmggS2hhaSwgUGjGsOG7nW5nIDUsIFF14bqtbiAzLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1640046404238!5m2!1svi!2s"  height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    
+                </div>
+    
+                <!-- Address -->
+                <div class="address">
+                    <!-- Binh Dinh -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressBinhDinhDesktop()" class="main-address__title">
+                            <p>Bình Định</p>
+                            <i id="address-plus__BD--Desktop" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__BD--Desktop" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--BD-Desktop" class="main-address__content">
+                            <p>VT SHOP QUI NHƠN</p>
+                            <p>Phan Bội Châu, Trần Hưng Đạo, Thành Phố Qui Nhơn, Bình Định</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Can Tho -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressCanThoDesktop()" class="main-address__title">
+                            <p>Cần Thơ</p>
+                            <i id="address-plus__CT--Desktop" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__CT--Desktop" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--CT-Desktop" class="main-address__content">
+                            <p>VT SHOP CẦN THƠ</p>
+                            <p>Mậu Thân, An Phú, Ninh Kiều, Cần Thơ</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Da Nang -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressDaNangDesktop()" class="main-address__title">
+                            <p>Đà Nẵng</p>
+                            <i id="address-plus__DAN--Desktop" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__DAN--Desktop" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--DAN-Desktop" class="main-address__content">
+                            <p>VT SHOP ĐÀ NẴNG</p>
+                            <p>Hoàng Hoa Thám, Tân Chính, Thanh Khê, Đà Nẵng</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dong Nai -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressDongNaiDesktop()" class="main-address__title">
+                            <p>Đồng Nai</p>
+                            <i id="address-plus__DON--Desktop" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__DON--Desktop" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--DON-Desktop" class="main-address__content">
+                            <p>VT SHOP BIÊN HÒA</p>
+                            <p>Phạm Văn Thuận, Tân Mai, Thành Phố Biên Hòa, Đồng Nai</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Ho Chi Minh -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressHoChiMinhDesktop()" class="main-address__title">
+                            <p>Hồ Chí Minh</p>
+                            <i id="address-plus__HCM--Desktop" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__HCM--Desktop" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--HCM-Desktop" class="main-address__content">
+                            <p>VT SHOP Trần Đình Xu</p>
+                            <p>Trần Đình Xu, Cầu Kho, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                     <!-- Quang Ngai -->
+                     <div class="main-address">
+                        <div onclick="openCloseAddressQuangNgaiDesktop()" class="main-address__title">
+                            <p>Quảng Ngãi</p>
+                            <i id="address-plus__QN--Desktop" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__QN--Desktop" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--QN-Desktop" class="main-address__content">
+                            <p>VT SHOP QUẢNG NGÃI</p>
+                            <p>Phan Đình Phùng, Chánh Lộ, Quảng Ngãi</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Vung Tau -->
+                     <div class="main-address">
+                        <div onclick="openCloseAddressVungTauDesktop()" class="main-address__title">
+                            <p>Vũng Tàu</p>
+                            <i id="address-plus__VT--Desktop" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__VT--Desktop" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--VT-Desktop" class="main-address__content">
+                            <p>VT SHOP VŨNG TÀU</p>
+                            <p>Đồ Chiểu, Phường 1, Thành phố Vũng Tàu, Bà Rịa - Vũng Tàu</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tablet -->
+        <div class="tablet">
+        <div class="stores">
+            <!-- Location -->
+            <div class="select-location">
+                <p>
+                    HỆ THỐNG CỬA HÀNG
+                </p>
+                <!-- Select-location-option -->
+                <div class="select-location-option">
+                    <select name="" id="">
+                        <option value="Chọn Thành Phố">Chọn Thành Phố </option>
+                        <option value="Bình Định">Bình Định </option>
+                        <option value="Quảng Ngãi">Quảng Ngãi</option>
+                        <option value="Cần Thơ">Cần Thơ </option>
+                        <option value="Đà Nẵng">Đà Nẵng </option>
+                        <option value="Đồng Nai">Đồng Nai </option>
+                        <option value="Hồ Chí Minh">Hồ Chí Minh </option>
+                        <option value="Vũng Tàu">Vũng Tàu </option>
+                    </select>
+                </div>
+                 <!-- Select-location-option -->
+                <div class="select-location-option">
+                    <select name="" id="">
+                        <option value="">Chọn Quận/Huyện </option>
+                    </select>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.514482274628!2d106.68499711458004!3d10.771851962224162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f23395e73d7%3A0xdbc7da126db3106d!2zVmlldCB1YyB0b3dlciwgNDAyIE5ndXnhu4VuIFRo4buLIE1pbmggS2hhaSwgUGjGsOG7nW5nIDUsIFF14bqtbiAzLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1640046404238!5m2!1svi!2s"  height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Address -->
+            <div class="address">
+                <!-- Binh Dinh -->
+                <div class="main-address">
+                    <div onclick="openCloseAddressBinhDinhTablet()" class="main-address__title">
+                        <p>Bình Định</p>
+                        <i id="address-plus__BD--Tablet" class="fas fa-plus address-plus"></i>
+                        <i id="address-minus__BD--Tablet" class="fas fa-minus address-minus"></i>
+                    </div>
+                    <div id="main-address__content--BD-Tablet" class="main-address__content">
+                        <p>VT SHOP QUI NHƠN</p>
+                        <p>Phan Bội Châu, Trần Hưng Đạo, Thành Phố Qui Nhơn, Bình Định</p>
+                        <div class="google-maps">
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>  
+                            </a>
+                            <a href="#">
+                                <span>Xem trên Google Maps</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Can Tho -->
+                <div class="main-address">
+                    <div onclick="openCloseAddressCanThoTablet()" class="main-address__title">
+                        <p>Cần Thơ</p>
+                        <i id="address-plus__CT--Tablet" class="fas fa-plus address-plus"></i>
+                        <i id="address-minus__CT--Tablet" class="fas fa-minus address-minus"></i>
+                    </div>
+                    <div id="main-address__content--CT-Tablet" class="main-address__content">
+                        <p>VT SHOP CẦN THƠ</p>
+                        <p>Mậu Thân, An Phú, Ninh Kiều, Cần Thơ</p>
+                        <div class="google-maps">
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>  
+                            </a>
+                            <a href="#">
+                                <span>Xem trên Google Maps</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Da Nang -->
+                <div class="main-address">
+                    <div onclick="openCloseAddressDaNangTablet()" class="main-address__title">
+                        <p>Đà Nẵng</p>
+                        <i id="address-plus__DAN--Tablet" class="fas fa-plus address-plus"></i>
+                        <i id="address-minus__DAN--Tablet" class="fas fa-minus address-minus"></i>
+                    </div>
+                    <div id="main-address__content--DAN-Tablet" class="main-address__content">
+                        <p>VT SHOP ĐÀ NẴNG</p>
+                        <p>Hoàng Hoa Thám, Tân Chính, Thanh Khê, Đà Nẵng</p>
+                        <div class="google-maps">
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>  
+                            </a>
+                            <a href="#">
+                                <span>Xem trên Google Maps</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dong Nai -->
+                <div class="main-address">
+                    <div onclick="openCloseAddressDongNaiTablet()" class="main-address__title">
+                        <p>Đồng Nai</p>
+                        <i id="address-plus__DON--Tablet" class="fas fa-plus address-plus"></i>
+                        <i id="address-minus__DON--Tablet" class="fas fa-minus address-minus"></i>
+                    </div>
+                    <div id="main-address__content--DON-Tablet" class="main-address__content">
+                        <p>VT SHOP BIÊN HÒA</p>
+                        <p>Phạm Văn Thuận, Tân Mai, Thành Phố Biên Hòa, Đồng Nai</p>
+                        <div class="google-maps">
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>  
+                            </a>
+                            <a href="#">
+                                <span>Xem trên Google Maps</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Ho Chi Minh -->
+                <div class="main-address">
+                    <div onclick="openCloseAddressHoChiMinhTablet()" class="main-address__title">
+                        <p>Hồ Chí Minh</p>
+                        <i id="address-plus__HCM--Tablet" class="fas fa-plus address-plus"></i>
+                        <i id="address-minus__HCM--Tablet" class="fas fa-minus address-minus"></i>
+                    </div>
+                    <div id="main-address__content--HCM-Tablet" class="main-address__content">
+                        <p>VT SHOP Trần Đình Xu</p>
+                        <p>Trần Đình Xu, Cầu Kho, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</p>
+                        <div class="google-maps">
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>  
+                            </a>
+                            <a href="#">
+                                <span>Xem trên Google Maps</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Quang Ngai -->
+                 <div class="main-address">
+                    <div onclick="openCloseAddressQuangNgaiTablet()" class="main-address__title">
+                        <p>Quảng Ngãi</p>
+                        <i id="address-plus__QN--Tablet" class="fas fa-plus address-plus"></i>
+                        <i id="address-minus__QN--Tablet" class="fas fa-minus address-minus"></i>
+                    </div>
+                    <div id="main-address__content--QN-Tablet" class="main-address__content">
+                        <p>VT SHOP QUẢNG NGÃI</p>
+                        <p>Phan Đình Phùng, Chánh Lộ, Quảng Ngãi</p>
+                        <div class="google-maps">
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>  
+                            </a>
+                            <a href="#">
+                                <span>Xem trên Google Maps</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vung Tau -->
+                 <div class="main-address">
+                    <div onclick="openCloseAddressVungTauTablet()" class="main-address__title">
+                        <p>Vũng Tàu</p>
+                        <i id="address-plus__VT--Tablet" class="fas fa-plus address-plus"></i>
+                        <i id="address-minus__VT--Tablet" class="fas fa-minus address-minus"></i>
+                    </div>
+                    <div id="main-address__content--VT-Tablet" class="main-address__content">
+                        <p>VT SHOP VŨNG TÀU</p>
+                        <p>Đồ Chiểu, Phường 1, Thành phố Vũng Tàu, Bà Rịa - Vũng Tàu</p>
+                        <div class="google-maps">
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>  
+                            </a>
+                            <a href="#">
+                                <span>Xem trên Google Maps</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Mobile -->
+        <div class="mobile">
+            <div class="stores">
+                <!-- Location -->
+                <div class="select-location">
+                    <p>
+                        HỆ THỐNG CỬA HÀNG
+                    </p>
+                    <!-- Select-location-option -->
+                    <div class="select-location-option">
+                        <select name="" id="">
+                            <option value="Chọn Thành Phố">Chọn Thành Phố </option>
+                            <option value="Bình Định">Bình Định </option>
+                            <option value="Quảng Ngãi">Quảng Ngãi</option>
+                            <option value="Cần Thơ">Cần Thơ </option>
+                            <option value="Đà Nẵng">Đà Nẵng </option>
+                            <option value="Đồng Nai ">Đồng Nai </option>
+                            <option value="Hồ Chí Minh">Hồ Chí Minh </option>
+                            <option value="Vũng Tàu">Vũng Tàu </option>
+                        </select>
+                    </div>
+                     <!-- Select-location-option -->
+                    <div class="select-location-option">
+                        <select name="" id="">
+                            <option value="">Chọn Quận/Huyện </option>
+                        </select>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.514482274628!2d106.68499711458004!3d10.771851962224162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f23395e73d7%3A0xdbc7da126db3106d!2zVmlldCB1YyB0b3dlciwgNDAyIE5ndXnhu4VuIFRo4buLIE1pbmggS2hhaSwgUGjGsOG7nW5nIDUsIFF14bqtbiAzLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1640046404238!5m2!1svi!2s"  height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+    
+                <!-- Address -->
+                <div class="address">
+                    <!-- Binh Dinh -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressBinhDinhMobile()" class="main-address__title">
+                            <p>Bình Định</p>
+                            <i id="address-plus__BD--Mobile" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__BD--Mobile" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--BD-Mobile" class="main-address__content">
+                            <p>VT SHOP QUI NHƠN</p>
+                            <p>Phan Bội Châu, Trần Hưng Đạo, Thành Phố Qui Nhơn, Bình Định</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Can Tho -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressCanThoMobile()" class="main-address__title">
+                            <p>Cần Thơ</p>
+                            <i id="address-plus__CT--Mobile" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__CT--Mobile" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--CT-Mobile" class="main-address__content">
+                            <p>VT SHOP CẦN THƠ</p>
+                            <p>Mậu Thân, An Phú, Ninh Kiều, Cần Thơ</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Da Nang -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressDaNangMobile()" class="main-address__title">
+                            <p>Đà Nẵng</p>
+                            <i id="address-plus__DAN--Mobile" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__DAN--Mobile" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--DAN-Mobile" class="main-address__content">
+                            <p>VT SHOP ĐÀ NẴNG</p>
+                            <p>Hoàng Hoa Thám, Tân Chính, Thanh Khê, Đà Nẵng</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dong Nai -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressDongNaiMobile()" class="main-address__title">
+                            <p>Đồng Nai</p>
+                            <i id="address-plus__DON--Mobile" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__DON--Mobile" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--DON-Mobile" class="main-address__content">
+                            <p>VT SHOP BIÊN HÒA</p>
+                            <p>Phạm Văn Thuận, Tân Mai, Thành Phố Biên Hòa, Đồng Nai</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Ho Chi Minh -->
+                    <div class="main-address">
+                        <div onclick="openCloseAddressHoChiMinhMobile()" class="main-address__title">
+                            <p>Hồ Chí Minh</p>
+                            <i id="address-plus__HCM--Mobile" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__HCM--Mobile" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--HCM-Mobile" class="main-address__content">
+                            <p>VT SHOP Trần Đình Xu</p>
+                            <p>Trần Đình Xu, Cầu Kho, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</p>
+                            <div class="google-maps">
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                     <!-- Quang Ngai -->
+                     <div class="main-address">
+                        <div onclick="openCloseAddressQuangNgaiMobile()" class="main-address__title">
+                            <p>Quảng Ngãi</p>
+                            <i id="address-plus__QN--Mobile" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__QN--Mobile" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--QN-Mobile" class="main-address__content">
+                            <p>VT SHOP QUẢNG NGÃI</p>
+                            <p>Phan Đình Phùng, Chánh Lộ, Quảng Ngãi</p>
+                            <div class="google-maps">
+                                <a href="">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Vung Tau -->
+                     <div class="main-address">
+                        <div onclick="openCloseAddressVungTauMobile()" class="main-address__title">
+                            <p>Vũng Tàu</p>
+                            <i id="address-plus__VT--Mobile" class="fas fa-plus address-plus"></i>
+                            <i id="address-minus__VT--Mobile" class="fas fa-minus address-minus"></i>
+                        </div>
+                        <div id="main-address__content--VT-Mobile" class="main-address__content">
+                            <p>VT SHOP VŨNG TÀU</p>
+                            <p>Đồ Chiểu, Phường 1, Thành phố Vũng Tàu, Bà Rịa - Vũng Tàu</p>
+                            <div class="google-maps">
+                                <a href="">
+                                    <i class="fas fa-map-marker-alt"></i>  
+                                </a>
+                                <a href="#">
+                                    <span>Xem trên Google Maps</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer>
+        <div id="footer" class="footer">
+            <div class="main-footer hide">
+                <div class="sub-footer">
+                    <h4 class="sub-footer-title">
+                        CHÍNH SÁCH KHÁCH HÀNG
+                    </h4>
+                    <ul>
+                        <a href="#">
+                            <li>Chính sách giao hàng</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách bảo mật thông tin</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách tích điểm thành viên</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách bảo hành, đổi/trả sản phẩm</li>
+                        </a>
+                        <a href="#">
+                            <li>Chính sách thanh toán khi mua hàng Online</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="sub-footer">
+                    <h4 class="sub-footer-title">
+                        CUSTOMER SERVICE
+                    </h4>
+                    <ul>
+                        <a href="#">
+                            <li>Sản phẩm nổi bật</li>
+                        </a>
+                        <a href="#">
+                            <li>Tất cả sản phẩm</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="sub-footer">
+                    <h4 class="sub-footer-title">
+                        TIN TỨC
+                    </h4>
+                    <ul>
+                        <a href="#">
+                            <li>Live</li>
+                        </a>
+                        <a href="#">
+                            <li>Trendy</li>
+                        </a>
+                        <a href="#">
+                            <li>Entertainment</li>
+                        </a>
+                        <a href="#">
+                            <li>Grooming</li>
+                        </a>
+                        <a href="#">
+                            <li>Tuyển dụng</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="sub-footer-register">
+                    <div class="footer-register-frame">
+                        <input type="text" placeholder="Nhập email của bạn">
+                        <button>ĐĂNG KÝ</button>
+                    </div>
+                    <div class="footer-register-icon">
+                        <a href="#">
+                            <i class="fab fa-facebook-f facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram insta"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-footer-mobile mobile">
+                <div class="footer-mobile-content">
+                    <ul class="list-footer-mobile">
+                        <div class="footer-mobile-title">
+                            <li>
+                                <p onclick="openCloseFirstListFooter()">CHÍNH SÁCH KHÁCH HÀNG </p>
+                                <ul id="firstListFooter" class="list-footer-mobile__hide">
+                                    <li><a href="#">Chính sách giao hàng</a></li>
+                                    <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                                    <li><a href="#">Chính sách tích điểm thành viên</a></li>
+                                    <li><a href="#">Chính sách bảo hành,đổi/trả sản phẩm</a></li>
+                                    <li><a href="#">Chính sách thanh toán khi mua hàng online</a></li>
+                                </ul>
+                            </li>
+                            <i class="fas fa-chevron-down footer-down"></i>
+                        </div>
+
+                        <div class="footer-mobile-title">
+                            <li>
+                                <p onclick="openCloseSecondaryListFooter()">CUSTOMER SERVICE</p>
+                                <ul id="secondListFooter" class="list-footer-mobile__hide">
+                                    <li><a href="#">Sản phẩm nổi bật</a></li>
+                                    <li><a href="#">Tất cả sản phẩm</a></li>
+                                </ul>
+                            </li>
+                            <i class="fas fa-chevron-down footer-down"></i>
+                        </div>
+                        <div class="footer-mobile-title">
+                            <li>
+                                <p onclick="openCloseThirdListFooter()">TIN TỨC</p>
+                                <ul id="thirdListFooter" class="list-footer-mobile__hide">
+                                    <li><a href="#">Live</a></li>
+                                    <li><a href="#">Trendy</a></li>
+                                    <li><a href="#">Entertainment</a></li>
+                                    <li><a href="#">Grooming</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                </ul>
+                            </li>
+                            <i class="fas fa-chevron-down footer-down"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-footer-register-mobile mobile">
+                <div class="footer-register-frame-mobile">
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button>ĐĂNG KÝ</button>
+                </div>
+                <div class="footer-register-icon">
+                    <a href="#">
+                        <i class="fab fa-facebook-f facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram insta"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright &copy; 2022 VT Shop. Designed by Trung Nguyen
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Back to top  -->
+    <a onclick="topFunction()" href="#" class="to-top" id="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="./js/main.js" type="text/javascript"></script>
+</body>
+</html>
